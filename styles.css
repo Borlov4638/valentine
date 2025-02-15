@@ -79,6 +79,15 @@
     rainbow 3s infinite linear;
 }
 
+.image {
+  position: absolute;
+  width: 50px; /* Размер картинки */
+  height: 50px;
+  animation:
+    fall linear 5s forwards,
+    rainbow 3s infinite linear;
+}
+
 @keyframes fall {
   from {
     transform: translateY(0);

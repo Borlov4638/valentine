@@ -43,6 +43,24 @@ function createWord() {
   }, 5000);
 }
 
+function createImage() {
+  const img = document.createElement("img");
+  img.src = "./pngtree-penis-icon-masculine-moving-pixel-png-image_5164900.png";
+  img.classList.add("image");
+
+  img.style.left = Math.random() * window.innerWidth + "px";
+
+  document.body.appendChild(img);
+
+  setTimeout(() => {
+    img.remove();
+  }, 5000);
+}
+
+function runSad() {
+  setInterval(createImage, 500);
+}
+
 function runCongrats() {
   setInterval(createWord, 100);
 }
